@@ -4,13 +4,11 @@ Features :
 
 
 GET /todos - Retrieve all todos from the database.
-GET /todos/
-- Fetch a single todo by its ID.
+GET /todos/ - Fetch a single todo by its ID.
 POST /todos - Create a new todo item.
-PUT /todos/
-- Update an existing todo by ID.
-DELETE /todos/
-- Delete a todo by ID.
+PUT /todos/- Update an existing todo by ID.
+DELETE /todos/ - Delete a todo by ID.
+
 Technologies
 Node.js - JavaScript runtime environment.
 Express - Web application framework for Node.js.
