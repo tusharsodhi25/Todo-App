@@ -1,6 +1,9 @@
 🚀 A Full Stack TODO App built with React.js on the frontend and Node.js, Express.js, and MongoDB on the backend.
+
 📝 Users can add, edit, delete, and view todos in real-time.
+
 🌐 Hosted on Render (backend) and Vercel (frontend).
+
 🔗 Fully responsive and RESTful.
 
 🧾 Features:
@@ -17,8 +20,11 @@ Responsive UI
 Live API integration
 
 🛠️ Tech Stack:
+
 Frontend: React.js, Axios, Tailwind CSS (or your styling choice)
+
 Backend: Node.js, Express.js, MongoDB, Mongoose
+
 Deployment: Render (API), Vercel (Frontend)
 
 🔗 Live Demo:
