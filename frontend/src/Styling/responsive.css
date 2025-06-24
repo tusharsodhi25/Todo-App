@@ -1,0 +1,29 @@
+@media screen and (max-width:550px){
+     .header{
+        font-size: 1.5rem;
+       
+    }
+
+    .input{
+        width:300px;
+    }
+
+    .card{
+        width:400px;
+    }
+}
+
+@media screen and (max-width:430px){
+     .header{
+        font-size: 1.2rem;
+       
+    }
+
+    .input{
+        width:250px;
+    }
+
+    .card{
+        width:350px;
+    }
+}
