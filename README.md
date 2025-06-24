@@ -4,10 +4,14 @@
 🔗 Fully responsive and RESTful.
 
 🧾 Features:
+
 Create Todo
+
 Update Todo
+
 Delete Todo
 View all Todos
+
 Responsive UI
 
 Live API integration
@@ -19,6 +23,7 @@ Deployment: Render (API), Vercel (Frontend)
 
 🔗 Live Demo:
 https://todoapp-25.netlify.app/
+
 Screenshot:
 
 ![Screenshot (12)](https://github.com/user-attachments/assets/ec135d5f-fde2-4afb-91a4-bf9a12ccf39f)
