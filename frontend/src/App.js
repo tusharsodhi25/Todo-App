@@ -18,15 +18,16 @@ const App = () => {
 
   const[editText,setEditText] = useState('');
 
+  const BASE_URL = "https://todo-app-4o92.onrender.com/api"
+
 // createTodo
 
 
   const handler = async ()=>{
 
-    const url = 'http://localhost:3002/api/createtodo'
-
+  
     try{
-      const res =  await axios.post(url,{title:todo});
+      const res =  await axios.post(`${BASE_URL}/createtodo`,{title:todo});
 
 
       if(res.data.success){
@@ -51,12 +52,12 @@ const App = () => {
 
    const fetchtodo = async ()=>{
 
-    const url = 'http://localhost:3002/api/getTodo'
+  
      
     try{
 
 
-      const res = await axios.get(url);
+      const res = await axios.get(`${BASE_URL}/getTodo`);
 
 
       if(res.data.success){
@@ -85,10 +86,9 @@ const App = () => {
 
   try{
 
-    const url = `http://localhost:3002/api/deleteTodo/${id}`
 
 
-    await axios.delete(url);
+    await axios.delete(`${BASE_URL}/deleteTodo/${id}`);
 
 
     setTodos(todos.filter(todo=>todo._id !== id))
@@ -106,10 +106,9 @@ const App = () => {
 
  const updateTodo = async()=>{
 
-  const url = `http://localhost:3002/api/updateTodo/${editTodo}`
 
   try{
-    const res = await axios.put(url,{title:editText})
+    const res = await axios.put(`${BASE_URL}/updateTodo/${editTodo}`,{title:editText})
 
     if(res.data.success){
       const updatedtodos = todos.map(todo=>todo._id === editTodo? {...todo,title:editText}:todo);
